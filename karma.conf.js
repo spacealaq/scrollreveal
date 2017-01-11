@@ -58,7 +58,7 @@ module.exports = function (karma) {
 				dir: 'coverage/',
 			},
 			customLaunchers,
-			reporters: ['dots', 'saucelabs', 'coverage'],
+			reporters: ['nyan', 'saucelabs', 'coverage'],
 			sauceLabs: {
 				testName: 'ScrollReveal',
 				build: process.env.TRAVIS_BUILD_NUMBER || 'manual',
@@ -77,7 +77,7 @@ module.exports = function (karma) {
 				type: 'lcov',
 				dir: '.ignore/coverage/',
 			},
-			reporters: ['mocha', 'coverage'],
+			reporters: ['nyan', 'coverage'],
 		})
 	}
 }
